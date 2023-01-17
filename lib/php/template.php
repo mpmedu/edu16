@@ -47,14 +47,6 @@
 
  <!--
  ********************************************
- for showing the checklist dialog
- ********************************************
--->
-<div id="checklist_container" class="container_class nodisplay"></div>
-  
-  
- <!--
- ********************************************
  for showing spinner and mask when Ajax is called
  ********************************************
 -->
@@ -114,7 +106,6 @@
   The html for the file explorer, needed to open files on the server
    ********************************************
   -->
-
 <div id="myExplorer" class="box nodisplay">
   <div id = "itemPopup" class='nodisplay'></div>
   <div class="myExp_div1" style="margin:0 15px;" >
@@ -136,7 +127,7 @@
   <svg> for plus and minus icons to expand or contract folders
    ********************************************
   -->
-  <div id='plusMinus' class='nodisplay'>
+  <div id='tem_plusMinus' class='nodisplay'>
     <svg  width=14 height=18 data-closed=true>
       <rect class='inbox'  x="2" width="9" y="5" height="9" fill="#666" />
       <rect class='inbox'  x="3" width="7" y="6" height="7" fill="#fff" />
@@ -148,8 +139,6 @@
     </svg>
   </div>
 
-
-
   <!--
    ********************************************
   This is the container that is used to show the list of categories in the qna file.
@@ -160,8 +149,7 @@
 
   <!--
    ********************************************
-  The next 3 are dialogs for getting input from the user.  They are activated by clicking
-  one of the submenus under the Settings menu.
+  The next 3 are dialogs for getting input from the user.  They are activated by clicking one of the submenus under the Settings menu.
    ********************************************
   -->
 

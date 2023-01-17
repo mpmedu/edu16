@@ -40,7 +40,6 @@
    display: none;
  }
 
-
  input,
  body {
    /* Prevents text from being selected */
@@ -79,15 +78,13 @@
 
  /* 
 ---------------------------
-Styles for the explorer which is used to open qna files.  It uses the jQuery File Tree Plugin which
-I downloaded from the internet.
+Styles for the explorer which is used to open qna files.  
 ---------------------------
  */
 
  #myExplorer {
    position: absolute;
-   cursor: default;
-   /*    Use normal arrow pointer */
+   cursor: default;      /*    Use normal arrow pointer */
    box-sizing: border-box;
    /* display:flex;
   align-items:center;
@@ -120,13 +117,6 @@ I downloaded from the internet.
    padding: 5px;
  }
 
- /* #folders_div {
-  padding-left: 10px;
-  margin-left: -10px;
-
-} */
-
-
  .fileList li.wait {
    background: url(../icon/spinner.gif) left top no-repeat;
  }
@@ -135,7 +125,6 @@ I downloaded from the internet.
  .fileList li>span.ext_qna {
    background: url(../icon/world-1.gif) left top no-repeat;
    /* background: url(../icon/file.png) left top no-repeat; */
-
  }
 
  .wait {
@@ -177,8 +166,6 @@ I downloaded from the internet.
    margin-bottom: -1px;
    white-space: nowrap;
    height: 19px;
-
-   /* margin-left: -10px; */
  }
 
  #files_div li>span {
@@ -203,8 +190,6 @@ I downloaded from the internet.
    /* background-color: #464 !important;
   color: white; */
    background-color: #ddd !important;
-   /* color: white; */
-
  }
 
  span.indx {
@@ -221,6 +206,6 @@ I downloaded from the internet.
    margin-left: 16px;
  }
 
- .crisp {
+ /* .crisp {
    shape-rendering: crispEdgeskdld;
- }
+ } */
