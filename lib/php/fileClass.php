@@ -106,7 +106,7 @@ class fileClass {
   private $ptrs;     // array of pointers to questions in the file
   private $base;
   private $settings;  // 0 to 11 settings for width & height of images
-  private $data;
+  private $fdata;
   
   private $textColor;
   private $fontName;
@@ -176,9 +176,7 @@ function init() {
   
   // set the base now because we have numPtrSectors
   $this->base = LEN_MAIN_SECTOR + $this->numPtrSectors * LEN_PTR_SECTOR - 1;
-  // echo 'base = ', $this->base,'<br>';
-  // $this->data = substr($contents,$this->base);
-  $this->data = unpack('C*',substr($contents,$this->base));
+  $this->fdata = unpack('C*',substr($contents,$this->base));
   
   $ta = unpack('v4',substr($contents,3517,8)); 
   
@@ -206,7 +204,6 @@ function init() {
     $s = substr($ss,$off,5);
     $ta = unpack('Vcat_off/Ccat_len',$s);
     if ($ta['cat_len'] == 0) break;
-    //$this->cats[$i+1] = substr($this->data,$ta['cat_off'],$ta['cat_len']);
     $this->cats[$i+1] = substr($contents,$ta['cat_off']+$this->base,$ta['cat_len']);
   } 
   
@@ -322,14 +319,14 @@ private function init4Coding($b,  $encrypt, &$cd) {
   $cd['sum1'] = $cd['low'] + $cd['high'];
 }
 
-public function getVars(&$ansCoder,&$numCats,&$subject,&$isRestricted,&$nFreeAccessQs,&$base,&$data,&$totalQs) {
+public function getVars(&$ansCoder,&$numCats,&$subject,&$isRestricted,&$nFreeAccessQs,&$base,&$fdata,&$totalQs) {
   $ansCoder = $this->ansCoder;
   $numCats = $this->numCats;
   $subject = $this->subject;
   $isRestricted = $this->isRestricted;
   $nFreeAccessQs = $this->nFreeAccessQs;
   $base = $this->base;
-  $data = $this->data;
+  $fdata = $this->fdata;
   $totalQs = $this->totalQs;
 }
 

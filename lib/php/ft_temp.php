@@ -1,6 +1,7 @@
 <?php
   session_start();
-  header("content-type:application/json");
+
+  header("content-type:text/html");
 
   $data = json_decode(file_get_contents('php://input'), true);
 
@@ -25,7 +26,7 @@
     $_SESSION['userin'] = false;
 
     $mf->getVars($result['ansCoder'],$result['numCats'],$result['subject'],$result['isRestricted'],
-      $result['nFreeAccessQs'],$result['base'],$result['data'],$result['totalQs']);
+      $result['nFreeAccessQs'],$result['base'],$result['fdata'],$result['totalQs']);
     if ($result['isRestricted']) {
       $stored = $data['stored'];   // localStorage
       //$result['pointReached'] = 0;
@@ -106,6 +107,8 @@
     
   // *****************************************************  
   case 'setSessionCompID':
+  // exit('rubbish and make this long to see the error that is returned and then even longer');
+  // strpos();
     // this sets $_SESSION['compID'] which is needed to unlock restricted-access files
     if (isset($data['compID'])) {
       $_SESSION['compID'] = urldecode($data['compID']);
@@ -126,13 +129,19 @@
   }
   
 goodExit:
+  header("content-type:application/json");
   if (isset($_SESSION['userin'])) $result['userin'] = $_SESSION['userin'];
   echo json_encode($result);
   exit;
   
 be:
+  header("content-type:application/json");
   $result['value'] = 'fail';
   if (isset($errmsg)) $result['errmsg'] = $errmsg;
   echo json_encode($result);
   exit;
+
+
 ?>
+
+

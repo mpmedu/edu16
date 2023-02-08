@@ -1,6 +1,7 @@
 <?php
   session_start();
-  header("content-type:application/json");
+  
+  header("content-type:text/html");
   
   $data = json_decode(file_get_contents('php://input'), true);
 
@@ -80,21 +81,22 @@
   // *****************************************************  
     
   // *****************************************************  
-  case 'setSessionCompID':
-    $result['value'] = 'fail';  // for testing
-    break;
+  // case 'setSessionCompID':
+  //   $result['value'] = 'fail';  // for testing
+  //   break;
+
+
   }
   
   
   // if (isset($_SESSION['userin'])) $result['userin'] = $_SESSION['userin'];
-
+  header("content-type:application/json");
   echo json_encode($result);
   exit;
 be:
-
-  $result['value'] = 'fail';
+header("content-type:application/json");
+$result['value'] = 'fail';
   if (isset($errmsg)) $result['errmsg'] = $errmsg;
-  
   echo json_encode($result);
   exit;
 //***************************** end of un-function code *************************************

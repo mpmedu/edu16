@@ -58,11 +58,11 @@
  }
 
 
- /* 
+ /*    
    the box class is needed for startupbox, myExplorer, unlockbox, creatorloginbox, getqnakeybox, adminbox,
     msgbox, yesnobox, loading, flashbox, endbox, unlockbox and for spinner div 
 */
-
+/* this is also in edu.all.css */
  .box {
    border: 2px solid black;
    position: absolute;

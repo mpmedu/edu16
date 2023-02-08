@@ -122,11 +122,10 @@
   
   
   <?php
-  // the template.php file is put into this position
-  require_once('lib/php/template.php');
-
-  // require_once('../../lib/php/common.php');
-
+  // the template files are put into this position
+  require_once('./htmlTemplates/tem_common.php');
+  require_once('./htmlTemplates/tem_edu.php');
+  require_once('./htmlTemplates/tem_resources.php');
   ?>
   
   <!-- 
@@ -200,17 +199,66 @@
 
   <!-- <script src="../../lib/js/jquery-1.10.2.min.js"></script> -->
   
-  <!-- myNamespace2.js must be first and myJsLib1.js must be 2nd -->
-  <script src="lib/js/myNamespace2.js"></script>
-  <script src="lib/js/myJsLib1.js"></script>
-  <!-- <script src="lib/js/common2022.12.07.js"></script> -->
-  <script src="lib/js/common.jQfree.js"></script>
-  <script src="lib/js/edumeta.js"></script>
-  <script src="lib/js/edu.js"></script>
-  <script src="lib/js/myExpl.js"></script>
-
-
   
+  
+  
+  <!-- <script src="lib/js/common2022.12.07.js"></script> -->
+  <!-- 
+  
+  
+  
+  <script src="lib/js/myNamespace2.js"></script>
+  
+  <script src="lib/js/myJsLib1.js"></script>
+  
+  <script src="lib/js/common.jQfree.js"></script> 
+  
+  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edu.js"></script>
+    <script src="lib/js/edumeta.js"></script>
+	  <script src="lib/js/myExpl.js"></script>
+
+
+  -->
+  
+  <!-- myNamespace2.js must be first and myJsLib1.js must be 2nd -->
+  <!--
+  <script src="../../lib/js_from_edu16 2023.01.18/myNamespace2.PP.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myJsLib1.PP.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.PP.adv.min.js"></script>
+    <script src="../../lib/js_from_edu16 2023.01.18/edu.PP.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edumeta.PP.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myExpl.PP.adv.min.js"></script>
+  
+  
+  
+  <script src="../../lib/js_from_edu16 2023.01.18/myNamespace2.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myJsLib1.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edu.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edumeta.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myExpl.js"></script>
+  
+  
+  
+  this is the joining of all PP.adv files using copy /b in Command Prompt
+  <script src="../../lib/js_from_edu16 2023.01.18/eduall.PP.adv.min.js"></script>
+  
+  <script src="../../lib/js_from_edu16 2023.01.18/eduall.combined.PP.adv.min.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/eduall.combined.adv.min.js"></script>
+  
+  <script src="./lib/js/eduall.combined.adv.min.js"></script>
+  
+//-->
+
+  <script src="../../lib/js_from_edu16 2023.01.18/myNamespace2.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myJsLib1.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edu.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/edumeta.js"></script>
+  <script src="../../lib/js_from_edu16 2023.01.18/myExpl.js"></script>
+
   <script>
   <!--
 
