@@ -174,7 +174,8 @@ c) Question/Options sounds
     <br>
     <p style='text-align:center;'>
     <button>Reset</button>
-    <button>OK</button>
+    <button>Cancel</button>
+    <button>Apply</button>
     </p>
   </div>
 </div>

@@ -88,7 +88,7 @@
 
   }
   
-  
+goodExit:
   // if (isset($_SESSION['userin'])) $result['userin'] = $_SESSION['userin'];
   header("content-type:application/json");
   echo json_encode($result);

@@ -252,16 +252,10 @@
   
 //-->
 
-  <script src="../../lib/js_from_edu16 2023.01.18/myNamespace2.js"></script>
-  <script src="../../lib/js_from_edu16 2023.01.18/myJsLib1.js"></script>
-  <script src="../../lib/js_from_edu16 2023.01.18/common.jQfree.js"></script>
-  <script src="../../lib/js_from_edu16 2023.01.18/edu.js"></script>
-  <script src="../../lib/js_from_edu16 2023.01.18/edumeta.js"></script>
-  <script src="../../lib/js_from_edu16 2023.01.18/myExpl.js"></script>
+<script src="./lib/js/eduall.combined.adv.min.js"></script>
 
   <script>
   <!--
-
 //-->
   </script>
   

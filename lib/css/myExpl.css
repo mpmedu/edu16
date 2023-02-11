@@ -118,23 +118,23 @@ Styles for the explorer which is used to open qna files.
  }
 
  .fileList li.wait {
-   background: url(../icon/spinner.gif) left top no-repeat;
+   background: url(./icon/spinner.gif) left top no-repeat;
  }
 
  /* File Extensions - I will only allow qna file types */
  .fileList li>span.ext_qna {
-   background: url(../icon/world-1.gif) left top no-repeat;
-   /* background: url(../icon/file.png) left top no-repeat; */
+   background: url(./icon/world-1.gif) left top no-repeat;
+   /* background: url(./icon/file.png) left top no-repeat; */
  }
 
  .wait {
-   background: url(../icon/spinner.gif) left top no-repeat;
+   background: url(./icon/spinner.gif) left top no-repeat;
  }
 
  .directory {
    display: inline-block;
-   /* background: url(../icon/directory.png) left top no-repeat; */
-   background: url(../icon/folder_closed.png) left top no-repeat;
+   /* background: url(./icon/directory.png) left top no-repeat; */
+   background: url(./icon/folder_closed.png) left top no-repeat;
    width: 20px;
    height: 16px;
    margin-bottom: -3px;
@@ -142,7 +142,7 @@ Styles for the explorer which is used to open qna files.
  }
 
  .folder_open {
-   background: url(../icon/folder_open.png) left top no-repeat;
+   background: url(./icon/folder_open.png) left top no-repeat;
  }
 
  .itemName {
