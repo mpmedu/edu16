@@ -2,7 +2,8 @@
   session_start();
   
   header("content-type:text/html");
-  
+  // header("content-type:application/json");
+
   $data = json_decode(file_get_contents('php://input'), true);
 
   $todo = $_GET['todo'];
@@ -90,11 +91,13 @@
   
 goodExit:
   // if (isset($_SESSION['userin'])) $result['userin'] = $_SESSION['userin'];
-  header("content-type:application/json");
+  // header("content-type:application/json");
+  // header("responsetype:json");
   echo json_encode($result);
   exit;
 be:
-header("content-type:application/json");
+// header("content-type:application/json");
+// header("responsetype:json");
 $result['value'] = 'fail';
   if (isset($errmsg)) $result['errmsg'] = $errmsg;
   echo json_encode($result);

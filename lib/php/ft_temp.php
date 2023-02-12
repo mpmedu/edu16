@@ -2,6 +2,9 @@
   session_start();
 
   header("content-type:text/html");
+  // header("content-type:text/plain");
+  // header("content-type:application/json");
+
 
   $data = json_decode(file_get_contents('php://input'), true);
 
@@ -129,13 +132,23 @@
   }
   
 goodExit:
-  header("content-type:application/json");
+  // header("content-type:application/json");
+  // try{
+  //   header("responsetype:json");
+  // } catch (Error $e) {
+  //   error_log($e);
+  // }
   if (isset($_SESSION['userin'])) $result['userin'] = $_SESSION['userin'];
   echo json_encode($result);
   exit;
   
 be:
-  header("content-type:application/json");
+  // header("content-type:application/json");
+  // try{
+  //   header("responsetype:json");
+  // } catch (Error $e) {
+  //   error_log($e);
+  // }
   $result['value'] = 'fail';
   if (isset($errmsg)) $result['errmsg'] = $errmsg;
   echo json_encode($result);

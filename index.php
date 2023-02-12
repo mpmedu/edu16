@@ -240,6 +240,13 @@
   <script src="../../lib/js_from_edu16 2023.01.18/edumeta.js"></script>
   <script src="../../lib/js_from_edu16 2023.01.18/myExpl.js"></script>
   
+  <script src="./lib/js/myNamespace2.js"></script>
+  <script src="./lib/js/myJsLib1.js"></script>
+  <script src="./lib/js/common.jQfree.js"></script>
+  <script src="./lib/js/edu.js"></script>
+  <script src="./lib/js/edumeta.js"></script>
+  <script src="./lib/js/myExpl.js"></script>
+  
   
   
   this is the joining of all PP.adv files using copy /b in Command Prompt
