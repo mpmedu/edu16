@@ -24,8 +24,8 @@
   <script src="../../lib/js/myNamespace2.js"></script>
   
  -->
- <link rel="stylesheet" href="lib/css/edu.all.css">
- <link rel="stylesheet" href="lib/css/myExpl.css">
+ <link rel="stylesheet" href="./lib/css/edu.all.css">
+ <link rel="stylesheet" href="./lib/css/myExpl.css">
 
 
 </head>
@@ -246,8 +246,6 @@
   <script src="./lib/js/edu.js"></script>
   <script src="./lib/js/edumeta.js"></script>
   <script src="./lib/js/myExpl.js"></script>
-  
-  
   
   this is the joining of all PP.adv files using copy /b in Command Prompt
   <script src="../../lib/js_from_edu16 2023.01.18/eduall.PP.adv.min.js"></script>

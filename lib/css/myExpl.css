@@ -145,17 +145,17 @@ Styles for the explorer which is used to open qna files.
    background: url(./icon/folder_open.png) left top no-repeat;
  }
 
- .itemName {
+ #myExplorer .itemName {
    padding-left: 2px;
    padding-right: 4px;
    white-space: nowrap;
  }
 
- #itemPopup>span.itemName {
+ #myExplorer #itemPopup>span.itemName {
    text-decoration: underline;
  }
 
- #itemPopup {
+ #myExplorer #itemPopup {
    position: absolute;
    background-color: #fff;
    z-index: 10000;
@@ -182,27 +182,27 @@ Styles for the explorer which is used to open qna files.
    margin-left: 10px;
  }
 
- .itemName {
+ #myExplorer .itemName {
    font-size: 13px;
  }
 
- .chosen {
+ #myExplorer .chosen {
    /* background-color: #464 !important;
   color: white; */
    background-color: #ddd !important;
  }
 
- span.indx {
+ #myExplorer span.indx {
    position: absolute;
    width: 14px;
  }
 
- span {
+ #myExplorer span {
    margin: 0;
    padding: 0;
  }
 
- .holder {
+ #myExplorer .holder {
    margin-left: 16px;
  }
 

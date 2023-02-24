@@ -218,7 +218,7 @@ input[readonly="true"] {
  */
 #msgbox {
   /* for messages and yes/no box */
-  z-index: 10000;
+  z-index: 25000;
   text-align: center;
   border: 2px solid black;
   border-radius: 4px;
@@ -231,7 +231,7 @@ input[readonly="true"] {
 
 #msgboxmask {
   /* for messages and yes/no box */
-  z-index: 9500;
+  z-index: 21000;
   top: 0;
   left: 0;
   position: absolute;

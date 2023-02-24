@@ -93,6 +93,8 @@
     
   // *****************************************************  
   case 'setCompID':
+    // strpos();   // for testing
+
     // this sets $_COOKIE['compID'] and $_SESSION['compID'] which is needed to unlock restricted-access files
     if (!isset($_COOKIE['compID'])) {
       //echo 'the cookie was not set';
@@ -111,6 +113,8 @@
   // *****************************************************  
   case 'setSessionCompID':
   // exit('rubbish and make this long to see the error that is returned and then even longer');
+  // )
+  // abc;
   // strpos();
     // this sets $_SESSION['compID'] which is needed to unlock restricted-access files
     if (isset($data['compID'])) {
